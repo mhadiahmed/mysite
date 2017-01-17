@@ -1,0 +1,14 @@
+
+{% block content %}
+<div>
+    <form method="POST" action="." class="form-conrol">
+        {% csrf_token %}
+        {{form.as_p}}
+        
+        <input type="submit" value="{{title}}" class="btn btn-default">
+    </form>
+        </div>
+     
+
+    </div>
+{% endblock content %}
